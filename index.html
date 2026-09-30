@@ -19,7 +19,7 @@
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
-    a{color:inherit}
+    a{color:inherit}.sep{color:var(--wine-mid);font-weight:800}
     .wrap{width:min(1120px,calc(100% - 36px));margin:auto}
     .topbar{position:absolute;z-index:5;left:0;right:0;top:0;padding:22px 0;color:white}
     .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
@@ -123,15 +123,15 @@
   <header class="hero" id="top">
     <div class="topbar">
       <div class="wrap">
-        <div class="brand">Madrid HHH · Since 1984</div>
+        <div class="brand">Madrid HHH <span class="sep">·</span> Since 1984</div>
         <a class="toplink" href="https://madridhhh.com/" target="_blank" rel="noopener">madridhhh.com ↗</a>
       </div>
     </div>
 
     <div class="wrap hero-content">
       
-      <h1><span class="hhh-title">Madrid HHH</span><br><em>Vuelta de Vinos</em></h1>
-      <p class="lead">Journey through the wines of Spain in one of Europe's largest urban parks.<br>9 wines | 10km or 5km routes | Sunday 11th Oct</p>
+      <h1><span class="hhh-title">Madrid HHH <span class="sep">·</span> The Wine Trail</span><br><em>Vuelta de Vinos</em></h1>
+      <p class="lead">Journey through the wines of Spain in one of Europe's largest urban parks.<br>9 wines <span class="sep">·</span> 10km or 5km routes <span class="sep">·</span> Sunday 11th Oct</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#reserve">Reserve your place ↓</a>
         <a class="btn btn-ghost" href="#location">See the details</a>
@@ -152,7 +152,7 @@
           <div>
             <div class="pin">📍</div>
             <strong>Lago Metro station</strong>
-            <span>Sunday 11 October · 13:00 · Lago Metro, Madrid</span><div style="margin-top:18px"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Lago+Metro+Station+Madrid" target="_blank" rel="noopener">Open in Google Maps ↗</a></div>
+            <span>Sunday 11 October <span class="sep">·</span> 13:00 <span class="sep">·</span> Lago Metro, Madrid</span><div style="margin-top:18px"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Lago+Metro+Station+Madrid" target="_blank" rel="noopener">Open in Google Maps ↗</a></div>
           </div>
         </div>
       </div>
@@ -223,7 +223,7 @@
   </main>
 
   <footer>
-    <div class="wrap">Madrid Hash House Harriers · Run for fun · <a href="https://madridhhh.com/" target="_blank" rel="noopener">madridhhh.com</a><br><span style="opacity:.7">Wine Run event page · v0.9</span></div>
+    <div class="wrap">Madrid Hash House Harriers <span class="sep">·</span> Run for fun <span class="sep">·</span> <a href="https://madridhhh.com/" target="_blank" rel="noopener">madridhhh.com</a><br><span style="opacity:.7">Wine Run event page <span class="sep">·</span> v0.10</span></div>
   </footer>
 </body>
 </html>
