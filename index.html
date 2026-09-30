@@ -41,7 +41,7 @@
     .hero-content{position:relative;z-index:2;text-align:center;padding:135px 0 145px;text-shadow:0 3px 18px rgba(0,0,0,.55)}
     .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.08);backdrop-filter:blur(8px);text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:.75rem}
     h1,h2,h3{font-family:"DM Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-weight:800}
-    h1{font-size:clamp(3.25rem,9vw,7.9rem);line-height:.88;letter-spacing:-.045em;margin:26px auto 22px;max-width:1000px;text-wrap:balance}
+    h1{font-size:clamp(3.25rem,9vw,7.9rem);line-height:.88;letter-spacing:-.045em;margin:26px auto 22px;max-width:1000px;text-wrap:balance}.hhh-title{display:inline-block;font-size:.42em;letter-spacing:.02em;margin-bottom:.18em}
     h1 em{font-weight:800;color:#fff}
     .lead{font-size:clamp(1.05rem,2.1vw,1.32rem);max-width:720px;margin:0 auto 32px;color:rgba(255,255,255,.84)}
     .hero-stats{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:34px auto 0}
@@ -86,7 +86,7 @@
     .pay-points{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:26px auto 0}
     .pay-points span{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);padding:10px 14px;border-radius:999px;font-weight:700}
     .limited{display:inline-block;margin-top:28px;padding:10px 14px;border-radius:10px;background:#a52a4e;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem}
-    .fineprint{max-width:670px;margin:24px auto 0;color:rgba(255,255,255,.57);font-size:.87rem}
+    .member-price{margin:14px auto 0;color:#f2dfad;font-weight:700;font-size:.95rem}.fineprint{max-width:670px;margin:24px auto 0;color:rgba(255,255,255,.57);font-size:.87rem}
     .reserve{padding:95px 0;text-align:center}
     .reserve-box{max-width:900px;margin:auto;border:1px solid var(--line);border-radius:34px;background:white;padding:clamp(34px,7vw,70px);box-shadow:var(--shadow);position:relative;overflow:hidden}
     .reserve-box:before{content:"🍇";position:absolute;font-size:9rem;right:-22px;top:-44px;opacity:.07;transform:rotate(18deg)}
@@ -130,7 +130,7 @@
 
     <div class="wrap hero-content">
       
-      <h1>Madrid HHH<br><em>Vuelta de Vinos</em></h1>
+      <h1><span class="hhh-title">Madrid HHH</span><br><em>Vuelta de Vinos</em></h1>
       <p class="lead">Journey through the wines of Spain in one of Europe's largest urban parks.<br>9 wines | 10km or 5km routes | Sunday 11th Oct</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#reserve">Reserve your place ↓</a>
@@ -197,7 +197,7 @@
     <section class="section payment" id="payment">
       <div class="wrap payment-inner">
         <div class="kicker" style="color:#e8ca86">Entry</div>
-        <div class="price">€20</div>
+        <div class="price">€20*</div>
         <h2 style="margin-top:0">Pay on the day.</h2>
         <p class="section-lead">Your entry includes the Wine Run and nine glasses of wine along the route.</p>
         <div class="pay-points">
@@ -205,7 +205,7 @@
           <span>✓ 10 km or 5 km</span>
           <span>✓ Pay on the day</span>
         </div>
-        <div class="limited">Limited spaces</div>
+        <div class="limited">Limited spaces</div><p class="member-price">*€10 for existing Madrid HHH members</p>
         <p class="fineprint">Wine is for participants aged 18+ and is always optional. Please pace yourself, hydrate, and don't drive after drinking.</p>
       </div>
     </section>
@@ -223,7 +223,7 @@
   </main>
 
   <footer>
-    <div class="wrap">Madrid Hash House Harriers · Run for fun · <a href="https://madridhhh.com/" target="_blank" rel="noopener">madridhhh.com</a><br><span style="opacity:.7">Wine Run event page · v0.8</span></div>
+    <div class="wrap">Madrid Hash House Harriers · Run for fun · <a href="https://madridhhh.com/" target="_blank" rel="noopener">madridhhh.com</a><br><span style="opacity:.7">Wine Run event page · v0.9</span></div>
   </footer>
 </body>
 </html>
