@@ -25,9 +25,15 @@
     .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
     .brand{font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.86rem}
     .toplink{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.45);font-size:.9rem}
-    .hero{min-height:760px;position:relative;overflow:hidden;display:grid;place-items:center;background:
-      radial-gradient(circle at 78% 25%,rgba(215,181,109,.26),transparent 24%),
-      linear-gradient(135deg,var(--wine-dark) 0%,var(--wine) 49%,#852745 100%);color:white}
+    .hero{min-height:760px;position:relative;overflow:hidden;display:grid;place-items:center;
+      background-image:
+        linear-gradient(rgba(45,9,21,.56),rgba(45,9,21,.64)),
+        url("assets/wineHash.jpg");
+      background-size:cover;
+      background-position:center center;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      color:white}
     .hero:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-1px;height:110px;background:var(--paper);clip-path:polygon(0 78%,20% 43%,37% 70%,58% 25%,76% 61%,100% 31%,100% 100%,0 100%)}
     .hero-art{position:absolute;inset:0;opacity:.32;pointer-events:none}
     .hero-art svg{width:100%;height:100%;display:block}
@@ -89,7 +95,7 @@
     footer{padding:36px 0 50px;text-align:center;color:var(--muted);font-size:.87rem}
     footer a{color:var(--wine);font-weight:700}
     @media(max-width:820px){
-      .hero{min-height:700px}
+      .hero{min-height:700px;background-attachment:scroll;background-position:center center}
       .hero-content{padding-top:115px}
       .cards{grid-template-columns:1fr 1fr}
       .route-grid,.location-grid{grid-template-columns:1fr}
@@ -119,25 +125,6 @@
         <div class="brand">Madrid HHH · Since 1984</div>
         <a class="toplink" href="https://madridhhh.com/" target="_blank" rel="noopener">madridhhh.com ↗</a>
       </div>
-    </div>
-
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice">
-        <g fill="none" stroke="white" stroke-width="2">
-          <path opacity=".28" d="M80 700C260 570 355 655 505 532c140-115 242-62 374-155 166-117 296-41 484-178"/>
-          <path opacity=".15" d="M-20 622c213-100 332-52 454-142 160-118 276-70 406-176 160-130 358-73 650-226"/>
-        </g>
-        <g fill="white" opacity=".15">
-          <circle cx="1140" cy="190" r="28"/><circle cx="1194" cy="215" r="28"/><circle cx="1164" cy="251" r="28"/>
-          <circle cx="1111" cy="235" r="28"/><circle cx="1136" cy="286" r="28"/><circle cx="1188" cy="282" r="28"/>
-          <path d="M1151 157c7-55 48-78 88-79-19 34-42 61-88 79z"/>
-          <path d="M268 164c0-30 26-55 58-55s58 25 58 55c0 38-24 66-49 93v66h38v18H279v-18h38v-66c-25-27-49-55-49-93zm24 0c0 18 15 33 34 33s34-15 34-33h-68z"/>
-        </g>
-        <g fill="white" opacity=".08">
-          <text x="84" y="388" font-size="128" font-family="DM Sans,Arial,sans-serif">ON ON</text>
-          <text x="945" y="610" font-size="100" font-family="Georgia,serif">¡SALUD!</text>
-        </g>
-      </svg>
     </div>
 
     <div class="wrap hero-content">
@@ -235,7 +222,7 @@
   </main>
 
   <footer>
-    <div class="wrap">Madrid Hash House Harriers · Run for fun · <a href="https://madridhhh.com/" target="_blank" rel="noopener">madridhhh.com</a><br><span style="opacity:.7">Wine Run event page · v0.5</span></div>
+    <div class="wrap">Madrid Hash House Harriers · Run for fun · <a href="https://madridhhh.com/" target="_blank" rel="noopener">madridhhh.com</a><br><span style="opacity:.7">Wine Run event page · v0.6</span></div>
   </footer>
 </body>
 </html>
