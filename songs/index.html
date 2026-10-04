@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#551226">
   <meta name="description" content="Madrid HHH pocket songbook. Find a song, join the chorus, and keep track of what you've sung.">
   <title>Songbook · Madrid HHH</title>
-  <link rel="stylesheet" href="songbook.css?v=0.4">
+  <link rel="stylesheet" href="songbook.css?v=0.5">
   <script src="vendor/qrcode.js" defer></script>
   <script src="songs.js" defer></script>
   <script src="songbook.js" defer></script>
@@ -15,17 +15,17 @@
   <a class="skip" href="#songs">Skip to songs</a>
   <div class="page">
     <header>
-      <div class="brand-row"><a class="brand" href="../">Madrid HHH <span>·</span> Songbook</a><button id="share" class="icon-button" aria-label="Share songbook and show QR code"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3H3v6h6zM21 3h-6v6h6zM9 15H3v6h6zM15 15h3v3h3v3h-6zM21 12v3M12 3v3M12 12h3M3 12h3"/></svg></button></div>
+      <div class="brand-row"><a class="brand" href="../">Madrid HHH <span>·</span> Songbook</a><div class="header-actions"><button id="share" class="icon-button" aria-label="Share songbook and show QR code"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3H3v6h6zM21 3h-6v6h6zM9 15H3v6h6zM15 15h3v3h3v3h-6zM21 12v3M12 3v3M12 12h3M3 12h3"/></svg></button><button id="reset" class="icon-button reset-button" aria-label="New circle" title="New circle">↻</button></div></div>
       <h1 class="sr-only">Madrid HHH Songbook</h1>
     </header>
     <section class="controls" aria-label="Find a song">
       <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search titles, opening lines or lyrics</span><input id="search" type="search" placeholder="Know a few words? Search here…" autocomplete="off"></label>
       <div class="filters" role="group" aria-label="Show songs"><button data-filter="remaining" aria-pressed="true">Remaining <span id="remaining-count"></span></button><button data-filter="sung" aria-pressed="false">Sung <span id="sung-count"></span></button><button data-filter="all" aria-pressed="false">All</button></div>
     </section>
-    <div class="list-heading"><p id="results" class="sr-only" role="status" aria-live="polite"></p><button class="text-button" id="reset">New circle ↻</button></div>
+    <p id="results" class="sr-only" role="status" aria-live="polite"></p>
     <main id="songs" tabindex="-1"></main>
     <noscript><p>This interactive preview needs JavaScript. <a href="https://madridhhh.com/hash-hymnals/">Read the current hymnals here.</a></p></noscript>
-    <footer><p>Your sung list stays on this device.</p><a href="https://madridhhh.com/hash-hymnals/">Original Madrid HHH hymnals ↗</a><p class="version">Songbook preview · v0.4</p></footer>
+    <footer><p>Your sung list stays on this device.</p><a href="https://madridhhh.com/hash-hymnals/">Original Madrid HHH hymnals ↗</a><p class="version">Songbook preview · v0.5</p></footer>
   </div>
   <div id="toast" class="toast" hidden><span id="toast-message" role="status"></span><button id="undo">Undo</button></div>
   <dialog id="share-dialog" aria-labelledby="share-title"><div class="dialog-top"><h2 id="share-title">Bring everyone in.</h2><button class="icon-button close" aria-label="Close sharing">×</button></div><p>Scan this code to open the songbook.</p><div id="qr"></div><p id="local-note" hidden>This is a local preview. Its QR code will work on other phones once the page is hosted.</p><label class="sr-only" for="share-url">Songbook URL</label><input id="share-url" readonly><button id="copy" class="primary">Copy link</button><p id="copy-status" role="status"></p></dialog>
