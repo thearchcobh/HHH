@@ -15,7 +15,7 @@ No build step, external fonts, CDN calls, accounts, or backend. The QR generator
 
 ## Content status
 
-This is an interaction example, not a finished transcription. Swing Low uses a traditional public-domain version (not the club adaptation). Down-Down Song contains a short excerpt. The other 20 entries explicitly link to the source hymnals rather than inventing lyrics. Supply the club's lyric text to populate each `firstLine` and `lyrics` field in `songs.js`; preserve the stable `id` values so saved selections remain valid. Source: https://madridhhh.com/hash-hymnals/ .
+All 22 songs contain the club lyrics supplied by the user on 4 October 2026, with opening lines and tune/performance notes. Wording is preserved; joined lines and verse spacing are cleaned up. Edit `songs.js` to maintain lyrics, retaining stable IDs. Source: https://madridhhh.com/hash-hymnals/ .
 
 All data loads up front; opening and searching songs requires no further network calls after initial loading. Offline reopening is not implemented. Storage failures are tolerated, but selections then last only for the current page session. No shared circle state or microphone features.
 

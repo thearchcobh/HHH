@@ -45,8 +45,9 @@ function render() {
       const reader = element('div','reader-tools'); reader.append(element('small','', 'A little louder, a little larger.'));
       const size = element('button','',lyricSize === 20 ? 'A+' : 'A−'); size.setAttribute('aria-label',lyricSize === 20 ? 'Increase lyric text size' : 'Use standard lyric text size');
       size.addEventListener('click',()=>{lyricSize=lyricSize===20?26:20; document.documentElement.style.setProperty('--lyric-size',`${lyricSize}px`);render();document.getElementById(panel.id).querySelector('button').focus({preventScroll:true});});
-      reader.append(size); panel.append(reader,element('p','lyrics',song.lyrics));
+      reader.append(size); panel.append(reader);
       if(song.note) panel.append(element('p','lyric-note',song.note));
+      panel.append(element('p','lyrics',song.lyrics));
     } else {
       const missing = element('p','missing','Lyrics aren’t included in this preview yet. '); const source = element('a','', 'Read this song in the current hymnals ↗'); source.href='https://madridhhh.com/hash-hymnals/'; source.target='_blank';source.rel='noopener';missing.append(source);panel.append(missing);
     }
