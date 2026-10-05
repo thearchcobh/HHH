@@ -42,7 +42,7 @@ function render() {
     check.addEventListener('change',()=>toggleSung(song,check.id)); label.append(check,element('span','', 'Sung')); heading.append(h2,label);
     const panel = element('section','lyrics-panel'); panel.id=`lyrics-${song.id}`; panel.hidden = openId !== song.id; panel.setAttribute('aria-labelledby',toggle.id);
     if(song.lyrics) {
-      const reader = element('div','reader-tools'); reader.append(element('small','', 'A little louder, a little larger.'));
+      const reader = element('div','reader-tools'); reader.style.justifyContent = 'flex-end';
       const size = element('button','',lyricSize === 20 ? 'A+' : 'A−'); size.setAttribute('aria-label',lyricSize === 20 ? 'Increase lyric text size' : 'Use standard lyric text size');
       size.addEventListener('click',()=>{lyricSize=lyricSize===20?26:20; document.documentElement.style.setProperty('--lyric-size',`${lyricSize}px`);render();document.getElementById(panel.id).querySelector('button').focus({preventScroll:true});});
       reader.append(size); panel.append(reader);
