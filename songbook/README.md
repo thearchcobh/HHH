@@ -1,6 +1,6 @@
-# Pocket songbook preview
+# Madrid HHH pocket songbook
 
-Open `/songs/` on any static host, or run `python3 -m http.server 8000` in the repository root and visit `http://localhost:8000/songs/`.
+Open `/songbook/` on any static host, or run `python3 -m http.server 8000` in the repository root and visit `http://localhost:8000/songbook/`.
 
 No build step, external fonts, CDN calls, accounts, or backend. The QR generator is vendored qrcode-generator 2.0.4 by Kazuhiko Arase (MIT; notice retained in the file). The QR encodes the current page URL, without query parameters or a fragment; a localhost QR is explicitly labelled as a local preview. Deploy before sharing with other phones.
 
@@ -19,4 +19,4 @@ All 22 songs contain the club lyrics supplied by the user on 4 October 2026, wit
 
 All data loads up front; opening and searching songs requires no further network calls after initial loading. Offline reopening is not implemented. Storage failures are tolerated, but selections then last only for the current page session. No shared circle state or microphone features.
 
-The wine-run home page is unchanged. This preview is intended for review on its feature branch before merging or enabling hosting.
+Published at https://thearchcobh.github.io/HHH/songbook/ . The wine-run home page is unchanged.

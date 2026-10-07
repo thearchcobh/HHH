@@ -21,3 +21,10 @@ https://thearchcobh.github.io/HHH/
 
 ## One-time GitHub Pages setup
 Repository → Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: main / root.
+
+## Songbook
+
+The mobile-first songbook is in `songbook/` and is published at:
+https://thearchcobh.github.io/HHH/songbook/
+
+It includes searchable lyrics, sung checkboxes, text sizing, and QR sharing.
