@@ -153,5 +153,12 @@ window.HASH_SONGS = [
     "firstLine": "Bestiality’s best, boys",
     "note": "Melody – Tie Me Kangaroo Down",
     "lyrics": "Chorus:\nBestiality’s best, boys\nBestiality’s best\nBestiality’s best, boys\nBestiality’s best\n\nVerse:\nStick your log in a dog, boys\nStick your log in a dog\nStick your log in a dog, boys\nStick your log in a dog Because…\nRepeat chorus\n\nOther verses (verse structure as above):\nRub your mound on a hound, girls…\nShoot your juice in a moose…\nBlow your load in a toad…\nStick your dick in a tick…\nGet in deep with a sheep…\nStick your log in a frog…\nShoot your juice in a goose…\nTry your luck with a duck…\nChuck your sperm in a worm…\nDown the throat of a goat…\nDrink the pee of a bee…\nGet it out for a trout…\nGive some cock to a croc…\nGo the whole way with a moray…\nHave a deer from the rear…\nHave a frig with a pig…\nHave a shag with a stag..\n.Intercourse with a horse…\nIn the sack with yak…\nJam your cam in a ram…\nMake a llama a mama…\nMove your tool in a mule…\nPut it through a gnu…\nPut your noodle to a poodle…\nPut your spear in a deer…\nRub your box on a fox, girls…\nRub your clitty on a kitty, girls…\nShoot your spunk in a skunk…\nSixty-nine with a swine…\nStick your rod up a cod…\nStick your cock in a hawk…\nStick your dork in a stork…\nUp the ass of a bass…\nUp the back of a yak…\nUp the box of a fox…\nUp the flue of a shrew…\nUp the hole of a mole…\nUp the spout of a trout…\nUp the tail of a whale…\nBlow your rocks in an ox…"
+  },
+  {
+    "id": "pretty-trail",
+    "title": "P-R-E-T-T-Y T-R-A-I-L",
+    "firstLine": "P-R-E… T-T-Y… T-R-A-I-L",
+    "note": "Melody – Mickey Mouse Club theme",
+    "lyrics": "P-R-E… T-T-Y… T-R-A-I-L\nPretty trail, pretty trail\nThe motherfuckers laid a pretty trail\nNow’s the time for us to say\nWe loved it all the way\nP-R-E… T-T-Y… T-R-A-I-L\nDown-down DOWN, down-down DOWN… (etc.)"
   }
 ];
